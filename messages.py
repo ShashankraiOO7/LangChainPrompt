@@ -10,6 +10,6 @@ messages=[ SystemMessage(content="You are hair Docter"),
           HumanMessage(content="Any solution to regrow the Hair of my head in 20 wrds only")]
 
 output=model.invoke(messages)
-messages.append(output)
+messages.append(AIMessage(content=output))
 
 print(messages)
