@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 model=ChatGoogleGenerativeAI(model='gemini-1.5-pro')
+#Simple list to Store ChatHistory
+
 chat_history=[]
 while True:
     user_input = input("User: ")
